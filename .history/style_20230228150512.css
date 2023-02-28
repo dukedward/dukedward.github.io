@@ -16,12 +16,16 @@
 
 .sections {
 	display: grid;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .sect, .sub-sect {
 	display: flex;
 	flex-direction: column;
-	justify-content: left;
+	justify-content: center;
 	align-items: center;
 }
 

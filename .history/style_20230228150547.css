@@ -21,7 +21,7 @@
 .sect, .sub-sect {
 	display: flex;
 	flex-direction: column;
-	justify-content: left;
+	justify-content: center;
 	align-items: center;
 }
 
