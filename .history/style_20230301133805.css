@@ -30,7 +30,7 @@
     justify-content: space-between;
 }
 
-.desc p,.title p {
+.desc p {
     padding-right: 1rem;
-    font-size: .85rem;
+    line-height: 1;
 }
