@@ -27,10 +27,10 @@
 .desc {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-.desc p,.title p {
+.desc,.title p {
     padding-right: 1rem;
     font-size: .85rem;
 }
