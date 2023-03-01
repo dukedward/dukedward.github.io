@@ -7,12 +7,20 @@
     background-color: #212529;
 }
 
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #212529;
+    margin: 0;
+    padding: 0;
+}
 
 
 
 .title h1,h2,p {
     margin-bottom: 0;
 }
+
 
 
 dt {
@@ -27,10 +35,6 @@ dd {
 h1,h2,h3,ul,li,p {
     color: #fff;
 } */
-
-.container {
-    height: 100vh;
-}
 
 .title {
 	display: flex;

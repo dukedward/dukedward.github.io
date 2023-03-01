@@ -29,6 +29,7 @@ h1,h2,h3,ul,li,p {
 } */
 
 .container {
+    /* width: 100vw; */
     height: 100vh;
 }
 
