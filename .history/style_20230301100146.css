@@ -1,17 +1,12 @@
-/* * {
-	margin: 0;
-	padding: 0;
-} */
+.container {
+    height: 100vh;
+}
 
 .title {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-}
-
-.title h1,h2,p {
-    margin-bottom: 0;
 }
 
 .sections {
@@ -21,7 +16,7 @@
 .sect, .sub-sect {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: left;
 	align-items: center;
 }
 
@@ -37,13 +32,4 @@
 
 .desc p {
     padding-right: 1rem;
-}
-
-dt {
-    font-size: medium;
-    font-weight: bold;
-}
-
-dd {
-    margin-bottom: 1rem;
 }
