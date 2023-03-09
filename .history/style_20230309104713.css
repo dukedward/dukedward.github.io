@@ -70,9 +70,6 @@
     background: linear-gradient(
         -185deg, #565e64, #6c757d
     );
-    border: 1px linear-gradient(
-        -185deg, #565e64, #6c757d
-    );
     box-shadow: inset -2px -2px 0px #5e5e5e,
         inset 2px 2px 0px #1c1c1c;
 }
