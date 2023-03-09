@@ -80,11 +80,8 @@ btns.forEach(btn => {
                             products.forEach( product => {
                                 const newSubSectListItem = document.createElement('li');
                                 // console.log(product.name);
-                                if (product.price > 0 && product.price % 1 != 0) {
+                                if (product.price > 0) {
                                     newSubSectListItem.innerHTML = `${product.name} - $${product.price.toFixed(2)}`;
-                                    newSubSectList.appendChild(newSubSectListItem);
-                                } else if (product.price > 0){
-                                    newSubSectListItem.innerHTML = `${product.name} - $${product.price}`;
                                     newSubSectList.appendChild(newSubSectListItem);
                                 } else {
                                     newSubSectListItem.innerHTML = product.name;
@@ -108,17 +105,8 @@ btns.forEach(btn => {
                     products.forEach( product => {
                         const newSectListItem = document.createElement('li');
                         // console.log(product.name);
-                        // console.log(product.price);
-                        if (product.price > 0 && product.price % 1 != 0) {
-                            newSectListItem.innerHTML = `${product.name} - $${product.price.toFixed(2)}`;
-                            newSectList.appendChild(newSectListItem);
-                        } else if (product.price > 0){
-                            newSectListItem.innerHTML = `${product.name} - $${product.price}`;
-                            newSectList.appendChild(newSectListItem);
-                        } else {
-                            newSectListItem.innerHTML = product.name;
-                            newSectList.appendChild(newSectListItem);
-                        }
+                        newSectListItem.innerHTML = product.name;
+                        newSectList.appendChild(newSectListItem);
                     })
                 })
                 newDiv.appendChild(newSectList)
