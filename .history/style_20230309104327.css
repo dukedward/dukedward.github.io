@@ -68,10 +68,7 @@
 
 .button-clicked {
     background: linear-gradient(
-        -185deg, #565e64, #6c757d
-    );
-    border: 1px linear-gradient(
-        -185deg, #565e64, #6c757d
+        -185deg, #131313, #444245
     );
     box-shadow: inset -2px -2px 0px #5e5e5e,
         inset 2px 2px 0px #1c1c1c;
@@ -117,6 +114,6 @@
 
     .btnReal {
         width: 100%;
-		margin-bottom: .5rem;
+		margin-bottom: 1rem;
     }
 }
