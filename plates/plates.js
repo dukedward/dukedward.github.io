@@ -9,7 +9,7 @@ btns.forEach(btn => {
             btn.classList.remove('button-clicked');
             btn.firstElementChild.classList.remove('icon-clicked')
         })
-        let btnName = btn.firstElementChild.innerHTML
+        let btnName = btn.id;
         // console.log(btnName);
         btn.classList.add('button-clicked');
         btn.firstElementChild.classList.add('icon-clicked')
@@ -31,7 +31,7 @@ btns.forEach(btn => {
             // Section Title
             const newSectTitle = document.createElement("h2");
             // console.log(category.name);
-            newSectTitle.innerHTML = category.name;
+            newSectTitle.innerHTML = btn.firstElementChild.innerHTML;
             // Section Description
             const catDesc = category.description
             // console.log(catDesc.length);
@@ -46,7 +46,7 @@ btns.forEach(btn => {
             newDiv.appendChild(newSectTitle)
             newDiv.appendChild(newDesc)
             // console.log(category.hasSubSection);
-            if (category.hasSubSection === true) {
+            if (category.hasSubSection === true && category.isTray === false) {
                 fetch(`https://backend4theforkofit.herokuapp.com/api/subCategories/category/${catID}`)
                 .then( res => res.json())
                 .then( data => {
